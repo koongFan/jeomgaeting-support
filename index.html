@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>점개팅 - 고객 지원</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            font-size: 48px;
+            margin-bottom: 8px;
+        }
+
+        .app-name {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .section {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .section-content {
+            color: #666;
+            font-size: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: inherit;
+            transition: background 0.2s;
+        }
+
+        .contact-item:hover {
+            background: #f0f0f0;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            font-size: 24px;
+        }
+
+        .kakao-icon {
+            background: #FEE500;
+        }
+
+        .email-icon {
+            background: #34C759;
+        }
+
+        .contact-info h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .contact-info p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .faq-item {
+            padding: 16px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .faq-item:first-child {
+            padding-top: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .faq-answer {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #999;
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: #34C759;
+            text-decoration: none;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #34C759;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🍽️</div>
+            <h1 class="app-name">점개팅</h1>
+            <p class="tagline">오늘 점심, 가볍게 만나는 직장인 소개팅</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">문의하기</h2>
+            <a href="https://open.kakao.com/o/s7ZJuv7h" class="contact-item" target="_blank">
+                <div class="contact-icon kakao-icon">💬</div>
+                <div class="contact-info">
+                    <h3>카카오톡 문의 <span class="badge">빠른 답변</span></h3>
+                    <p>평일 10:00 - 18:00 운영</p>
+                </div>
+            </a>
+            <a href="mailto:support@jeomgaeting.com" class="contact-item">
+                <div class="contact-icon email-icon">✉️</div>
+                <div class="contact-info">
+                    <h3>이메일 문의</h3>
+                    <p>dogehj191223@gmail.com</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">자주 묻는 질문</h2>
+
+            <div class="faq-item">
+                <p class="faq-question">Q. 회사 이메일이 없어요</p>
+                <p class="faq-answer">점개팅은 직장인 전용 서비스로, 회사·기관·대학교 이메일 인증이 필요합니다. 회사 이메일이 없거나 도메인 추가가 필요하시면 카카오톡으로 문의해 주세요.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q. 매칭은 어떻게 진행되나요?</p>
+                <p class="faq-answer">매일 오전 9시 30분에 최대 3명의 추천 카드가 제공됩니다. 마음에 드는 분께 신청하고, 상대방이 수락하면 채팅방이 열려요.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q. 서비스 운영 지역은 어디인가요?</p>
+                <p class="faq-answer">현재는 강남 업무지구에서 운영 중이며, 판교·여의도 등 다른 지역은 순차적으로 오픈 예정입니다.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q. 개인정보는 안전하게 보호되나요?</p>
+                <p class="faq-answer">네, 모든 개인정보는 암호화되어 안전하게 보호됩니다. 자세한 내용은 개인정보처리방침을 확인해 주세요.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Q. 계정을 삭제하고 싶어요</p>
+                <p class="faq-answer">카카오톡 문의하기를 통해 탈퇴하실 수 있어요.확인 후 모든 데이터가 즉시 삭제됩니다.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">서비스 정보</h2>
+            <div class="section-content">
+                <p><strong>서비스명:</strong> 점개팅</p>
+                <p><strong>운영 시간:</strong> 매일 06:00 - 14:00</p>
+                <p><strong>버전:</strong> 1.0.0</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 점개팅. All rights reserved.</p>
+            <p style="margin-top: 8px;">
+                <a href="privacy.html">개인정보처리방침</a> ·
+                <a href="terms.html">이용약관</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
